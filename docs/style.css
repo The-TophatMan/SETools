@@ -1,5 +1,61 @@
 body {
+  background-color: #111;
   font-family: monospace;
-  background-color: midnightblue;
+  color: white;
+  margin: 0;
+  padding: 0;
   display: flex;
+  justify-content: center;
+  align-items: baseline;
+  height: 100vh;
+}
+
+.title {
+  font-size: xx-large;
+  background-color: aqua;
+}
+
+.column {
+  background-color: bisque;
+}
+
+/*Collapsible section*/
+.collapsible {
+  background-color: #007;
+  color: #eee;
+  cursor: pointer;
+  padding: 0 16px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+}
+
+/*For the content of the collapsible*/
+.content {
+  padding: 0 16px;
+  background-color: #00A;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+/*When content is hovered*/
+.active,
+.collapsible:hover {
+  background-color: #00A;
+}
+
+/*Symbol for when content is not expanded*/
+.collapsible:after {
+  content: '\02795';
+  font-size: 13px;
+  color: white;
+  float: right;
+  margin-left: 5px;
+}
+
+/*Symbol for when content is expanded*/
+.active:after {
+  content: "\02796";
 }

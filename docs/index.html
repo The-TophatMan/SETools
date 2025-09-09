@@ -2,14 +2,162 @@
 <html lang="en">
 
 <head>
-  <title>Space Engineers Ship Tools</title>
   <meta charset="UTF-8" />
-  <link rel="stylesheet" type="text/css" href="styles.css">
-  <script src="script.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Space Engineers Ship Tools</title>
 </head>
 
 <body>
-
+  <div class="title">
+    <h1>Space Engineers Ship Tools</h1>
+  </div>
+  <!--Input Fields-->
+  <div class="column">
+    <h1>Manually input data</h1>
+    <div class="row">
+      <h3>Empty Weight</h3>
+      <input type="number" id="emptyWeight" placeholder="Weight (kg)" required>
+    </div>
+    <!--Thrust-->
+    <button type="button" class="collapsible">
+      <h2>Thrusters</h2>
+    </button>
+    <div class="content">
+      <!--Atmospheric-->
+      <button type="button" class="collapsible">
+        <h2>Atmospheric Thrusters</h2>
+      </button>
+      <div class="content">
+        <!--Large-->
+        <button type="button" class="collapsible">
+          <h2>Large Atmospheric Thrusters</h2>
+        </button>
+        <div class="content">
+          <div class="row">
+            <h3>Forward Facing</h3>
+            <input type="number" id="latForward" placeholder="Amount" required>
+          </div>
+          <div class="row">
+            <h3>Backward Facing</h3>
+            <input type="number" id="latBackward" placeholder="Amount" required>
+          </div>
+          <div class="row">
+            <h3>Left Facing</h3>
+            <input type="number" id="latLeft" placeholder="Amount" required>
+          </div>
+          <div class="row">
+            <h3>Right Facing</h3>
+            <input type="number" id="latRight" placeholder="Amount" required>
+          </div>
+          <div class="row">
+            <h3>Upward Facing</h3>
+            <input type="number" id="latUp" placeholder="Amount" required>
+          </div>
+          <div class="row">
+            <h3>Downward Facing</h3>
+            <input type="number" id="latDown" placeholder="Amount" required>
+          </div>
+        </div>
+        <!--Large Flat-->
+        <button type="button" class="collapsible">
+          <h2>Large Flat Atmospheric Thrusters</h2>
+        </button>
+        <div class="content">
+          <div class="row">
+            <h3>Forward Facing</h3>
+            <input type="number" id="lfatForward" placeholder="Amount" required>
+          </div>
+          <div class="row">
+            <h3>Backward Facing</h3>
+            <input type="number" id="lfatBackward" placeholder="Amount" required>
+          </div>
+          <div class="row">
+            <h3>Left Facing</h3>
+            <input type="number" id="lfatLeft" placeholder="Amount" required>
+          </div>
+          <div class="row">
+            <h3>Right Facing</h3>
+            <input type="number" id="lfatRight" placeholder="Amount" required>
+          </div>
+          <div class="row">
+            <h3>Upward Facing</h3>
+            <input type="number" id="lfatUp" placeholder="Amount" required>
+          </div>
+          <div class="row">
+            <h3>Downward Facing</h3>
+            <input type="number" id="lfatDown" placeholder="Amount" required>
+          </div>
+        </div>
+        <!--Small-->
+        <button type="button" class="collapsible">
+          <h2>Small Atmospheric Thrusters</h2>
+        </button>
+        <div class="content">
+          <div class="row">
+            <h3>Forward Facing</h3>
+            <input type="number" id="satForward" placeholder="Amount" required>
+          </div>
+          <div class="row">
+            <h3>Backward Facing</h3>
+            <input type="number" id="satBackward" placeholder="Amount" required>
+          </div>
+          <div class="row">
+            <h3>Left Facing</h3>
+            <input type="number" id="satLeft" placeholder="Amount" required>
+          </div>
+          <div class="row">
+            <h3>Right Facing</h3>
+            <input type="number" id="satRight" placeholder="Amount" required>
+          </div>
+          <div class="row">
+            <h3>Upward Facing</h3>
+            <input type="number" id="satUp" placeholder="Amount" required>
+          </div>
+          <div class="row">
+            <h3>Downward Facing</h3>
+            <input type="number" id="satDown" placeholder="Amount" required>
+          </div>
+        </div>
+        <!--Small Flat-->
+        <button type="button" class="collapsible">
+          <h2>Small Flat Atmospheric Thrusters</h2>
+        </button>
+        <div class="content">
+          <div class="row">
+            <h3>Forward Facing</h3>
+            <input type="number" id="sfatForward" placeholder="Amount" required>
+          </div>
+          <div class="row">
+            <h3>Backward Facing</h3>
+            <input type="number" id="sfatBackward" placeholder="Amount" required>
+          </div>
+          <div class="row">
+            <h3>Left Facing</h3>
+            <input type="number" id="sfatLeft" placeholder="Amount" required>
+          </div>
+          <div class="row">
+            <h3>Right Facing</h3>
+            <input type="number" id="sfatRight" placeholder="Amount" required>
+          </div>
+          <div class="row">
+            <h3>Upward Facing</h3>
+            <input type="number" id="sfatUp" placeholder="Amount" required>
+          </div>
+          <div class="row">
+            <h3>Downward Facing</h3>
+            <input type="number" id="sfatDown" placeholder="Amount" required>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Output Fields-->
+  <div class="column">
+    <h1>...or upload a blueprint!</h1>
+    <p>Blueprint loading coming soon...</p>
+  </div>
+  <script src="script.js"></script>
 </body>
 
 </html>
